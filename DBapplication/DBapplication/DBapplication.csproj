@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC8232D5-B804-4766-8840-C88C50EAD01E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBapplication</RootNamespace>
+    <AssemblyName>DBapplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CEO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEO.Designer.cs">
+      <DependentUpon>CEO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEOfunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEOfunc.Designer.cs">
+      <DependentUpon>CEOfunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Complaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complaint.Designer.cs">
+      <DependentUpon>Complaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactCSCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactCSCust.Designer.cs">
+      <DependentUpon>ContactCSCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="CS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CS.Designer.cs">
+      <DependentUpon>CS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustContacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustContacts.Designer.cs">
+      <DependentUpon>CustContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBManager.cs" />
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustFuns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustFuns.Designer.cs">
+      <DependentUpon>CustFuns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fdata.Designer.cs">
+      <DependentUpon>Fdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSub.Designer.cs">
+      <DependentUpon>ManageSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderCust.Designer.cs">
+      <DependentUpon>OrderCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicelaunch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicelaunch.Designer.cs">
+      <DependentUpon>servicelaunch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician.Designer.cs">
+      <DependentUpon>Technician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="towerinstall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="towerinstall.Designer.cs">
+      <DependentUpon>towerinstall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CEO.resx">
+      <DependentUpon>CEO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEOfunc.resx">
+      <DependentUpon>CEOfunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complaint.resx">
+      <DependentUpon>Complaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactCSCust.resx">
+      <DependentUpon>ContactCSCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CS.resx">
+      <DependentUpon>CS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustContacts.resx">
+      <DependentUpon>CustContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustFuns.resx">
+      <DependentUpon>CustFuns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fdata.resx">
+      <DependentUpon>Fdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSub.resx">
+      <DependentUpon>ManageSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderCust.resx">
+      <DependentUpon>OrderCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicelaunch.resx">
+      <DependentUpon>servicelaunch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician.resx">
+      <DependentUpon>Technician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="towerinstall.resx">
+      <DependentUpon>towerinstall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cs DB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\again.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CS DB1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
